@@ -106,8 +106,6 @@ export default {
       }
       throw new Error(`Unregistered engine fail: ${err.message}. Response body: ${errResponse}`)
     }
-
-    return true
   }
 }
 

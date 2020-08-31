@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fop version="2.0">
+  <font-base>fonts/</font-base>
+
+  <source-resolution>300</source-resolution>
+  <target-resolution>300</target-resolution>
+  
+  <default-page-settings height="11in" width="8.26in"/>
+  
+  <renderers>
+    <renderer mime="application/pdf">
+      <filterList>
+        <value>flate</value>
+      </filterList>
+
+      <merge-fonts>true</merge-fonts>
+      
+      <fonts>
+        <font metrics-url="simsun.xml" kerning="yes" embed-url="simsun.ttf">
+          <font-triplet name="SimSun" style="normal" 
+          weight="normal"/>
+        </font>
+
+	<font metrics-url="FREE3OF9.xml" kerning="yes" embed-url="FREE3OF9.ttf">
+          <font-triplet name="barcode" style="normal" weight="normal"/>
+        </font>
+      </fonts>
+    </renderer>
+
+    <renderer mime="application/postscript">
+      <filterList>
+        <value>flate</value>
+      </filterList>
+      
+      <fonts>
+        <font metrics-url="simsun.xml" kerning="yes" embed-url="simsun.ttf">
+          <font-triplet name="SimSun" style="normal" 
+          weight="normal"/>
+        </font>
+
+	<font metrics-url="FREE3OF9.xml" kerning="yes" embed-url="FREE3OF9.TTF">
+          <font-triplet name="barcode" style="normal" weight="normal"/>
+        </font>
+      </fonts>
+    </renderer>
+  </renderers>
+</fop>

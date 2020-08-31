@@ -1,0 +1,25 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+.eslintrc.js
+dist
+
+# Debug tool
+nodemon.js
+
+# Docker
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+# application folder
+logs
+output
+storage
+template
+
+# readme
+readme.md

@@ -1,0 +1,14 @@
+version: "3"
+services:
+  render:
+    image: fop:1.0.0
+    ports:
+      - "8080:8080"
+    container_name: fop
+    volumes:
+      - .env:/home/node/app/.env
+      - ./logs:/home/node/app/logs
+      - ./output:/home/node/app/output
+      - ./download:/home/node/app/download
+      - ./storage:/home/node/app/storage
+      - ./template:/home/node/app/template

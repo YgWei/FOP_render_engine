@@ -6,7 +6,6 @@ import kafkaProducer from './kafkaProducer'
 import commandHandler from '../handler/command'
 
 const subscribeTopic = config.kafkaTopics.subscribeTopic
-
 const groupId = config.kafka.groupId
 
 const kafka = new Kafka({
@@ -47,5 +46,9 @@ export default {
         }
       }
     })
+  },
+  stopListener: async () => {
+    await consumer.disconnect()
+    logger.info('Consumer stopped.')
   }
 }
